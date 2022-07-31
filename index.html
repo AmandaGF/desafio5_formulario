@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <title>Mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+    
+    <div class="page">
+        <header>
+
+            <h1>MENTORIA</h1>
+            <p> Preencha o formulário abaixo para <br />
+                agendar a sua mentoria
+
+        </header>
+
+        <form id="form" action="" method="">
+
+            <fieldset>
+
+                <legend>Informações Pessoais</legend>
+                
+                <div class="nome_sobrenome">
+                        <div class="input-campos">
+
+                            <label for="name">Nome </label>
+                            <input type="text" name="name" id="name" required />
+                            
+                        </div>
+
+                        <div class="input-campos">
+        
+                            <label for="sobrenome">Sobrenome </label>
+                            <input type="text" name="sobrenome" id="sobrenome" required />
+                            
+                        </div>
+                </div>
+                    <div class="input-campos">
+    
+                        <label for="email">E-mail <span> (digite um e-mail válido)</span> </label>
+                        <input type="email" name="email" id="email" required />
+                                                   
+                    </div>
+
+                    <div class="input-campos">
+    
+                        <label for="password">Senha <span>(mínimo de 6 caracteres)</span></label>
+                        <input type="password" name="password" id="password" required minlength="6" />
+                           
+                    </div>
+                    
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Informações do Mentor</legend>
+                
+                    <div class="input-campos">
+    
+                        <label for="mentor">Nome do seu mentor <span>(só o primeiro nome)</span> </label>
+                        <input type="text" name="mentor" id="mentor" required />
+                           
+                    </div>
+                   
+            </fieldset>
+
+            <fieldset>
+
+                <legend> Seus horários disponíveis </legend>
+
+                <p id="primeira_mentoria">Primeira mentoria</p>
+            <div class="primeira_tres">
+                    <div class="input-campos">
+                        <label for="primeira_data"> Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="primeira_data" id="primeira_data" required>
+                    </div>
+
+                    <div class="input-campos">
+                        <label for="primeiro_horario_das"> Das </label>
+                        <input type="time" name="primeiro_horario_das" id="primeiro_horario_das" required>
+                    </div>
+
+                    <div class="input-campos">
+                        <label for="primeiro_horario_ate"> Até </label>
+                        <input type="time" name="primeiro_horario_ate" id="primeiro_horario_ate" required>
+                    </div>
+            </div>
+
+                <p>Segunda mentoria</p>
+            <div class="segunda_tres">
+                    <div class="input-campos">
+                        <label for="segunda_data"> Data <span>(DD/MM/AAAA)</span></label>
+                        <input type="date" name="segunda_data" id="segunda_data" required>
+                    </div>
+
+                    <div class="input-campos">
+                        <label for="segundo_horario_das"> Das </label>
+                        <input type="time" name="segundo_horario_das" id="segundo_horario_das" required>
+                    </div>
+
+                    <div class="input-campos">
+                        <label for="segundo_horario_ate"> Até </label>
+                        <input type="time" name="segundo_horario_ate" id="segundo_horario_ate" required>
+                    </div>
+            </div>
+            
+            </fieldset>
+
+
+        </form>
+    
+    </div>
+
+    <footer>
+        <input id="submit" type="submit" form="form" value="Salvar">
+    </footer>
+   
+</body>
+</html> 
